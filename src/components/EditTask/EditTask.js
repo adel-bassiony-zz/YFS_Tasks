@@ -28,7 +28,9 @@ export default function EditTask(props) {
             "barcode": barcode,
         }
 
-        dispatch({type: "Edit_Task", index: props.index, taskDetails: newTaskDetails})
+        dispatch({ type: "Edit_Task", index: props.index, taskDetails: newTaskDetails })
+        
+        setShow(!show)
     }
 
     return (
