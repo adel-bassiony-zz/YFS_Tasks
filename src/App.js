@@ -1,8 +1,13 @@
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import TasksTable from 'components/TasksTable/TasksTable';
+
 function App() {
     return (
-        <div className="App">
-            
-        </div>
+        <ErrorBoundary>
+            <div className="px-5">
+                <TasksTable />
+            </div>
+        </ErrorBoundary>
     );
 }
 
