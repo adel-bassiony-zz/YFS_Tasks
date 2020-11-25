@@ -81,7 +81,16 @@ export default function EditTask(props) {
                         <div className="col-md-6 mt-3">
                             <label>Status:</label>
                             <select className="custom-select" value={status} onChange={(e) => setStatus(e.target.value)}>
-                                <option value="">Option 1</option>
+                                <option value="0">Assigned</option>
+                                <option value="1">Started</option>
+                                <option value="2">Successful</option>
+                                <option value="3">Failed</option>
+                                <option value="4">InProgress</option>
+                                <option value="6">Unassigned</option>
+                                <option value="7">Accepted</option>
+                                <option value="8">Decline</option>
+                                <option value="9">Cancel</option>
+                                <option value="10">Deleted</option>
                             </select>
                         </div>
                         
