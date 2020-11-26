@@ -34,7 +34,7 @@ export default function TasksTable() {
                             value={status}
                             onChange={(e) => setStatus(e.target.value)} >
                             <option value="" disabled>Choose The Status</option>
-                            <option value="all">All</option>
+                            <option value="">All</option>
                             <option value="0">Assigned</option>
                             <option value="1">Started</option>
                             <option value="2">Successful</option>
