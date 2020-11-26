@@ -1,8 +1,7 @@
 import TasksTableRow from 'components/TasksTableRow/TasksTableRow';
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import Loader from 'components/Loader/Loader';
-import data from 'data/tasks.json';
 
 export default function TasksTable() {
 
