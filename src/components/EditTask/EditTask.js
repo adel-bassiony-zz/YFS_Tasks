@@ -35,7 +35,9 @@ export default function EditTask(props) {
 
     return (
         <>
-            <button type="button" className="btn btn-sm btn-warning mx-1" onClick={() => setShow(!show)}>Edit</button>
+            <button type="button" className="btn btn-sm btn-warning mx-1" onClick={() => setShow(!show)}>
+                <i class="fas fa-edit"></i>
+            </button>
 
             <Modal show={show} onHide={() => setShow(!show)} size="lg" centered>
                 <Modal.Header closeButton>

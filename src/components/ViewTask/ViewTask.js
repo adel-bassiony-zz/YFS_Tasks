@@ -9,7 +9,9 @@ export default function ViewTask({ task }) {
 
     return (
         <>
-            <button type="button" className="btn btn-sm btn-info mx-1" onClick={() => setShow(!show)}>View</button>
+            <button type="button" className="btn btn-sm btn-info mx-1" onClick={() => setShow(!show)}>
+                <i class="fas fa-eye"></i>
+            </button>
 
             <Modal show={show} onHide={() => setShow(!show)} size="lg" centered>
                 <Modal.Header closeButton>
