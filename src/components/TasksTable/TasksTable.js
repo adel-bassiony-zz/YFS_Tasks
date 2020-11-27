@@ -12,7 +12,7 @@ export default function TasksTable() {
     const [date, setDate] = useState(new Date())
 
     const tasksRows = tasks
-        .filter(task => status === "" ? task : task.task_status === status || task.date === date)
+        .filter(task => status === "" ? task : task.task_status === status || task.task_datetime === date)
         .map((task, index) => 
             <TasksTableRow
                 key={`task-${index}`}
@@ -49,7 +49,7 @@ export default function TasksTable() {
 
                     </div>
                     <div className="col-md-3">
-                        <input type="date" placeholder="Enter the date" className="form-control" onChange={(e) => setDate(e.target.value)} />
+                        <input type="date" placeholder="Enter the date" className="form-control" value={date} onChange={(e) => setDate(e.target.value)} />
                     </div>
                 </div>
                 <table className="w-100 mt-4">
